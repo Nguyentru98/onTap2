@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Tìm giá trị âm đầu tiên trong mảng 1 chiều các số thực. Nếu mảng không có giá trị âm thì trả về -1
+
+            function arr(x){
+                for(i=0; i<x.length;i++){
+                    if(x[i]<0){
+                        return x[i];
+                    // }else{
+                    //     return -1;
+                    }
+                }
+                return -1;             
+            }
+            let x1=[1,2,3,5,-2,3];
+            let result=arr(x1)
+            document.write(result)
+
+    </script>
+</body>
+</html>

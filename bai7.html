@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Cho mảng 1 chiều các số nguyên. 
+        // Hãy viết hàm tìm giá trị lớn nhất trong mảng có dạng 5^k. 
+        // Nếu mảng khong tồn tại giá trị 5^k thì hàm sẽ trả về 0
+
+        // function getBaseLog(x, y) {
+        //     return Math.log(y) / Math.log(x);
+        // }
+        // let arr=[1,2,3,4,25];
+        // for(i=0; i<arr.length; i++){
+        //     let log5 = getBaseLog(5, arr[i]);
+        //     if (log5 === Math.round(log5)) {
+        //         console.log(arr[i])
+        //     }
+        // }
+
+        function chek5k(num){
+            if(num===1){
+                return true;
+            }
+            while(num>5){
+                if(num%5 !==0){
+                    break;
+                }else{
+                    num= num/5;
+                }
+                if(num===5){
+                    return true;
+
+                }else{
+                    return false;
+                }
+            }
+        }
+        let arr=[1,2,3,125,25]
+        for(i=0; i<arr.length; i++){
+            if(chek5k(arr[i])===true)
+            console.log(arr[i]);
+        }
+        
+    </script>
+</body>
+</html>

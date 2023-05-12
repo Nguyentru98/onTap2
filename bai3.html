@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // "Viết chương trình nhập giá trị x sau tính giá trị của hàm số
+        // - f(x) = 2x^2 + 5x + 9 khi x >= 5, 
+        // - f(x) = -2x^2 + 4x – 9 khi x < 5"
+
+        function fx(x){
+            if(x>=5){
+               let f = 2*math.pou(x,2) + 5*x + 9 
+               return f;
+            }else if(x<5){
+               let f = -2*math.pou(x,2) + 4*x - 9 
+               return f ;
+            }
+        }
+        let x1 = +prompt('nhập x') 
+        let result = fx(x1)
+        document.write(result)
+            
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Cho mảng 1 chiều các số thực. Hãy viết hàm tìm một vị trí trong mảng thỏa 2 điều kiện:
+        //  có 2 giá trị lân cận và giá trị tại đó bằng tích 2 giá trị lân cận. 
+        // Nếu mảng không tồn tại giá trị như vậy thì trả về giá trị -1
+        
+        let a = true
+        let arr=[2,4,2,3,5];
+        for(i=1; i<arr.length-1; i++){
+            let k=arr[i+1]*arr[i-1]
+            if(arr[i]===k){
+                a = false
+                console.log(i);
+            }
+       
+        }
+            if (a === true){
+                console.log(-1)
+        }
+         
+
+    </script>
+</body>
+</html>
